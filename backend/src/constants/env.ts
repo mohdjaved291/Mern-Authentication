@@ -12,10 +12,10 @@ export const MONGO_URI = getEnv("MONGO_URI");
 export const NODE_ENV = getEnv("NODE_ENV", "development");
 export const PORT = getEnv("PORT", "4004");
 export const APP_ORIGIN = NODE_ENV === 'development'
-    ? 'http://localhost:5173'  // Development frontend URL
+    ? 'https://mern-authentication-il9y.onrender.com'  // Development frontend URL
     : getEnv("APP_ORIGIN");    // Production frontend URL
 export const API_ORIGIN = NODE_ENV === 'development'
-    ? 'http://localhost:4004'  // Development backend URL
+    ? 'https://mern-authentication-yty2.onrender.com'  // Development backend URL
     : getEnv("API_ORIGIN");
 export const JWT_SECRET = getEnv("JWT_SECRET");
 export const JWT_REFRESH_SECRET = getEnv("JWT_REFRESH_SECRET");
