@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     origin: NODE_ENV === 'development'
-        ? ['http://localhost:5173', 'http://localhost:4004']  // Add both localhost and 127.0.0.1
+        ? ['https://mern-authentication-il9y.onrender.com', 'https://mern-authentication-yty2.onrender.com']  // Add both frontend and backend
         : process.env.APP_ORIGIN,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
