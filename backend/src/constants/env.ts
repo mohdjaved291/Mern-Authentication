@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const getEnv = (key: string, defaultValue?: string): string => {
     const value = process.env[key] || defaultValue;
 
@@ -22,3 +26,4 @@ export const JWT_REFRESH_SECRET = getEnv("JWT_REFRESH_SECRET");
 export const EMAIL_SENDER = getEnv("EMAIL_SENDER");
 export const RESEND_API_KEY = getEnv("RESEND_API_KEY");
 
+export { getEnv };
