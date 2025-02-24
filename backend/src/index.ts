@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     origin: NODE_ENV === 'development'
-        ? ['https://mern-authentication-il9y.onrender.com', 'https://mern-authentication-yty2.onrender.com']  // Add both frontend and backend
+        ? ['https://mern-authentication-il9y.onrender.com', 'https://mern-authentication-1shw.onrender.com']  // Add both frontend and backend
         : process.env.APP_ORIGIN,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
