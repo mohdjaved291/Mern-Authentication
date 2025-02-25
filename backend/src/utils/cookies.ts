@@ -3,9 +3,10 @@ import { fifteenMinutesFromNow, thirtydaysFromNow } from "./date";
 
 export const REFRESH_PATH = "/auth/refresh"
 const secure = process.env.NODE_ENV !== "development";
+const sameSiteValue = process.env.NODE_ENV === "development" ? "lax" : "none";
 
 const defaults: CookieOptions = {
-    sameSite: "strict",
+    sameSite: sameSiteValue,
     httpOnly: true,
     secure,
 }
